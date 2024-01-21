@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stone Paper Scissors Game</title>
+</head>
+<style>
+    body{
+        text-align: center;
+    }
+</style>
+<body>
+    <h1>Stone Paper Scissors Game</h1>
+    <button onclick="
+    //This will generate random number between 0 and 3
+    let randomNumber = Math.random()*3;
+    let computerChoice;
+    if(randomNumber>0 && randomNumber<=1){
+        computerChoice = 'Stone';
+        // console.log('computer choice is stone');
+    }
+    else if(randomNumber<=2){
+        computerChoice = 'Paper';
+        // console.log('computer choice is paper');
+    }
+    else{
+        computerChoice = 'Scissor';
+        // console.log('computer choice is scissor');
+    }
+    let resultMsg;
+    if(computerChoice === 'Paper'){
+        resultMsg = 'You lose.';
+    }
+    else if(computerChoice === 'Stone'){
+        resultMsg = `It's a tie.`;
+    }
+    else{
+        resultMsg = 'You won.';
+    }
+    alert(`You have chosen Stone. Computer choice is ${computerChoice} and ${resultMsg}`);
+    
+    ">Stone</button>
+    <button onclick="
+    //This will generate random number between 0 and 3
+    randomNumber = Math.random()*3;
+    if(randomNumber>0 && randomNumber<=1){
+        computerChoice = 'Stone';
+        // console.log('computer choice is stone');
+    }
+    else if(randomNumber<=2){
+        computerChoice = 'Paper';
+        // console.log('computer choice is paper');
+    }
+    else{
+        computerChoice = 'Scissor';
+        // console.log('computer choice is scissor');
+    }
+    if(computerChoice === 'Scissor'){
+        resultMsg = 'You lose.';
+    }
+    else if(computerChoice === 'Paper'){
+        resultMsg = `It's a tie.`;
+    }
+    else{
+        resultMsg = 'You won.';
+    }
+    alert(`You have chosen Paper. Computer choice is ${computerChoice} and ${resultMsg}`);
+    
+    ">Paper</button>
+    <button onclick="
+    //This will generate random number between 0 and 3
+    randomNumber = Math.random()*3;
+    if(randomNumber>0 && randomNumber<=1){
+        computerChoice = 'Stone';
+        // console.log('computer choice is stone');
+    }
+    else if(randomNumber<=2){
+        computerChoice = 'Paper';
+        // console.log('computer choice is paper');
+    }
+    else{
+        computerChoice = 'Scissor';
+        // console.log('computer choice is scissor');
+    }
+    if(computerChoice === 'Stone'){
+        resultMsg = 'You lose.';
+    }
+    else if(computerChoice === 'Scissor'){
+        resultMsg = `It's a tie.`;
+    }
+    else{
+        resultMsg = 'You won.';
+    }
+    alert(`You have chosen Scissor. Computer choice is ${computerChoice} and ${resultMsg}`);
+    
+    ">Scissor</button>
+    
+</body>
+</html>
